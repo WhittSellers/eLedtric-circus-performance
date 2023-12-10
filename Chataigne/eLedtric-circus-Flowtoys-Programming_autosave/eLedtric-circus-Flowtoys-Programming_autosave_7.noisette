@@ -151,6 +151,12 @@
   "modules": {
     "items": [
       {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/logIncoming"
+          }
+        ],
         "niceName": "OSC",
         "type": "OSC",
         "scripts": {
@@ -163,20 +169,15 @@
         "params": {
           "containers": {
             "oscInput": {
+              "parameters": [
+                {
+                  "value": 9020,
+                  "hexMode": false,
+                  "controlAddress": "/localPort"
+                }
+              ]
             },
             "oscOutputs": {
-              "items": [
-                {
-                  "parameters": [
-                    {
-                      "value": "127.0.0.1",
-                      "controlAddress": "/remoteHost"
-                    }
-                  ],
-                  "niceName": "OSC Output",
-                  "type": "BaseItem"
-                }
-              ],
               "viewOffset": [
                 0,
                 0
@@ -197,6 +198,75 @@
         "values": {
           "parameters": [
             {
+              "controlAddress": "/_chan1",
+              "type": "Float",
+              "niceName": "/chan1",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_chan1"
+            },
+            {
+              "controlAddress": "/_End",
+              "type": "Float",
+              "niceName": "/End",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_End"
+            },
+            {
+              "value": 0.0,
+              "controlAddress": "/_EndVerse_1_Drop_1",
+              "type": "Float",
+              "niceName": "/EndVerse_1_Drop_1",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_EndVerse_1_Drop_1"
+            },
+            {
+              "controlAddress": "/_FirstLightCue",
+              "type": "Float",
+              "niceName": "/FirstLightCue",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_FirstLightCue"
+            },
+            {
+              "value": 1.0,
+              "controlAddress": "/_frame",
+              "type": "Float",
+              "niceName": "/frame",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_frame"
+            },
+            {
+              "value": 1.0,
+              "controlAddress": "/_LightCue0",
+              "type": "Float",
+              "niceName": "/LightCue0",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_LightCue0"
+            },
+            {
               "hexMode": false,
               "controlAddress": "/_powerOff",
               "type": "Integer",
@@ -209,6 +279,52 @@
               "shortName": "_powerOff"
             },
             {
+              "controlAddress": "/_Refrain",
+              "type": "Float",
+              "niceName": "/Refrain",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Refrain"
+            },
+            {
+              "value": 1.0,
+              "controlAddress": "/_Start",
+              "type": "Float",
+              "niceName": "/Start",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Start"
+            },
+            {
+              "value": 0.0,
+              "controlAddress": "/_Verse_1_Drop_1",
+              "type": "Float",
+              "niceName": "/Verse_1_Drop_1",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Verse_1_Drop_1"
+            },
+            {
+              "controlAddress": "/_Verse_2_Drop_4",
+              "type": "Float",
+              "niceName": "/Verse_2_Drop_4",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Verse_2_Drop_4"
+            },
+            {
               "hexMode": false,
               "controlAddress": "/_wakeUp",
               "type": "Integer",
@@ -219,6 +335,17 @@
               "hideInEditor": false,
               "feedbackOnly": false,
               "shortName": "_wakeUp"
+            },
+            {
+              "controlAddress": "/__samplerate",
+              "type": "Float",
+              "niceName": "/_samplerate",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "__samplerate"
             }
           ]
         }
@@ -227,6 +354,7 @@
         "niceName": "Flowtoys Connect Bridge OSC Module",
         "type": "Flowtoys Connect Bridge OSC Module",
         "scripts": {
+          "editorIsCollapsed": true,
           "items": [
             {
               "niceName": "flowtoys-connect",
@@ -259,7 +387,7 @@
               "controlAddress": "/updateRate"
             },
             {
-              "value": 0.5,
+              "value": 1.0,
               "controlAddress": "/maxBrightness"
             }
           ],
@@ -312,6 +440,7 @@
           }
         },
         "templates": {
+          "editorIsCollapsed": true,
           "viewOffset": [
             0,
             0
@@ -617,6 +746,13 @@
             "controlAddress": "/viewUIPosition"
           },
           {
+            "value": [
+              250.0,
+              235.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
             "value": true,
             "controlAddress": "/active"
           }
@@ -624,6 +760,258 @@
         "niceName": "State",
         "type": "State",
         "processors": {
+          "items": [
+            {
+              "niceName": "ShowStart",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_Start",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Power off",
+                    "command": {
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "LightMode1",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "LightMode2",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "LightMode3",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "LightMode4",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "ShowEnd",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
           "viewOffset": [
             0,
             0
