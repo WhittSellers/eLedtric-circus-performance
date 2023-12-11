@@ -151,12 +151,6 @@
   "modules": {
     "items": [
       {
-        "parameters": [
-          {
-            "value": false,
-            "controlAddress": "/logIncoming"
-          }
-        ],
         "niceName": "OSC",
         "type": "OSC",
         "scripts": {
@@ -209,6 +203,7 @@
               "shortName": "_chan1"
             },
             {
+              "value": 1.0,
               "controlAddress": "/_End",
               "type": "Float",
               "niceName": "/End",
@@ -220,7 +215,6 @@
               "shortName": "_End"
             },
             {
-              "value": 0.0,
               "controlAddress": "/_EndVerse_1_Drop_1",
               "type": "Float",
               "niceName": "/EndVerse_1_Drop_1",
@@ -279,6 +273,7 @@
               "shortName": "_powerOff"
             },
             {
+              "value": 0.0,
               "controlAddress": "/_Refrain",
               "type": "Float",
               "niceName": "/Refrain",
@@ -290,7 +285,7 @@
               "shortName": "_Refrain"
             },
             {
-              "value": 1.0,
+              "value": 0.0,
               "controlAddress": "/_Start",
               "type": "Float",
               "niceName": "/Start",
@@ -302,7 +297,42 @@
               "shortName": "_Start"
             },
             {
-              "value": 1.0,
+              "value": 0.0,
+              "controlAddress": "/_Strings",
+              "type": "Float",
+              "niceName": "/Strings",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Strings"
+            },
+            {
+              "value": 0.0,
+              "controlAddress": "/_Verse1_Drop1",
+              "type": "Float",
+              "niceName": "/Verse1_Drop1",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Verse1_Drop1"
+            },
+            {
+              "value": 0.0,
+              "controlAddress": "/_Verse2_Drop4",
+              "type": "Float",
+              "niceName": "/Verse2_Drop4",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false,
+              "shortName": "_Verse2_Drop4"
+            },
+            {
               "controlAddress": "/_Verse_1_Drop_1",
               "type": "Float",
               "niceName": "/Verse_1_Drop_1",
@@ -337,6 +367,7 @@
               "shortName": "_wakeUp"
             },
             {
+              "value": 60.0,
               "controlAddress": "/__samplerate",
               "type": "Float",
               "niceName": "/_samplerate",
@@ -415,7 +446,7 @@
                       "controlAddress": "/local"
                     },
                     {
-                      "value": "192.168.0.100",
+                      "value": "192.168.0.101",
                       "controlAddress": "/remoteHost"
                     }
                   ],
@@ -455,6 +486,7 @@
                 "mode": {
                   "parameters": [
                     {
+                      "value": 13,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 13,
@@ -470,6 +502,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 16,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 50,
@@ -491,6 +524,7 @@
                 "adjust": {
                   "parameters": [
                     {
+                      "value": true,
                       "alwaysNotify": true,
                       "minValue": 0,
                       "maxValue": 1,
@@ -505,6 +539,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 1.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -519,6 +554,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -533,6 +569,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -547,6 +584,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.5,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -561,6 +599,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.5,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -589,6 +628,7 @@
                 "mode": {
                   "parameters": [
                     {
+                      "value": 13,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 13,
@@ -604,6 +644,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 16,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 50,
@@ -625,6 +666,7 @@
                 "adjust": {
                   "parameters": [
                     {
+                      "value": true,
                       "alwaysNotify": true,
                       "minValue": 0,
                       "maxValue": 1,
@@ -639,6 +681,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 1.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -653,6 +696,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -667,6 +711,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -681,6 +726,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.5,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -695,6 +741,7 @@
                       "feedbackOnly": false
                     },
                     {
+                      "value": 0.5,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -830,12 +877,21 @@
                   {
                     "parameters": [
                       {
-                        "value": "",
+                        "value": "/modules/osc/values/_Strings",
                         "controlAddress": "/inputValue"
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value"
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -845,6 +901,70 @@
                 "viewZoom": 1.0
               },
               "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Wake up",
+                    "command": {
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Mode + Adjust",
+                    "command": {
+                      "containers": {
+                        "mode": {
+                          "parameters": [
+                            {
+                              "value": 1,
+                              "hexMode": false,
+                              "controlAddress": "/page"
+                            },
+                            {
+                              "value": 3,
+                              "hexMode": false,
+                              "controlAddress": "/mode"
+                            }
+                          ]
+                        },
+                        "adjust": {
+                          "parameters": [
+                            {
+                              "value": true,
+                              "controlAddress": "/enableAdjust"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/brightness"
+                            },
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/saturation"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/speed"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/density"
+                            }
+                          ]
+                        }
+                      },
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -868,12 +988,21 @@
                   {
                     "parameters": [
                       {
-                        "value": "",
+                        "value": "/modules/osc/values/_Verse1_Drop1",
                         "controlAddress": "/inputValue"
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value"
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -883,6 +1012,63 @@
                 "viewZoom": 1.0
               },
               "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Mode + Adjust",
+                    "command": {
+                      "containers": {
+                        "mode": {
+                          "parameters": [
+                            {
+                              "value": 1,
+                              "hexMode": false,
+                              "controlAddress": "/page"
+                            },
+                            {
+                              "value": 8,
+                              "hexMode": false,
+                              "controlAddress": "/mode"
+                            }
+                          ]
+                        },
+                        "adjust": {
+                          "parameters": [
+                            {
+                              "value": true,
+                              "controlAddress": "/enableAdjust"
+                            },
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/brightness"
+                            },
+                            {
+                              "value": 0.9321838617324829,
+                              "controlAddress": "/hue"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/saturation"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/speed"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/density"
+                            }
+                          ]
+                        }
+                      },
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -906,12 +1092,21 @@
                   {
                     "parameters": [
                       {
-                        "value": "",
+                        "value": "/modules/osc/values/_Refrain",
                         "controlAddress": "/inputValue"
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value"
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -921,6 +1116,59 @@
                 "viewZoom": 1.0
               },
               "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Mode + Adjust",
+                    "command": {
+                      "containers": {
+                        "mode": {
+                          "parameters": [
+                            {
+                              "value": 1,
+                              "hexMode": false,
+                              "controlAddress": "/page"
+                            },
+                            {
+                              "value": 6,
+                              "hexMode": false,
+                              "controlAddress": "/mode"
+                            }
+                          ]
+                        },
+                        "adjust": {
+                          "parameters": [
+                            {
+                              "value": true,
+                              "controlAddress": "/enableAdjust"
+                            },
+                            {
+                              "value": 0.75,
+                              "controlAddress": "/brightness"
+                            },
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/saturation"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/speed"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/density"
+                            }
+                          ]
+                        }
+                      },
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -944,12 +1192,21 @@
                   {
                     "parameters": [
                       {
-                        "value": "",
+                        "value": "/modules/osc/values/_Verse2_Drop4",
                         "controlAddress": "/inputValue"
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value"
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -959,6 +1216,59 @@
                 "viewZoom": 1.0
               },
               "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Mode + Adjust",
+                    "command": {
+                      "containers": {
+                        "mode": {
+                          "parameters": [
+                            {
+                              "value": 13,
+                              "hexMode": false,
+                              "controlAddress": "/page"
+                            },
+                            {
+                              "value": 16,
+                              "hexMode": false,
+                              "controlAddress": "/mode"
+                            }
+                          ]
+                        },
+                        "adjust": {
+                          "parameters": [
+                            {
+                              "value": true,
+                              "controlAddress": "/enableAdjust"
+                            },
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/brightness"
+                            },
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/saturation"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/speed"
+                            },
+                            {
+                              "value": 0.5,
+                              "controlAddress": "/density"
+                            }
+                          ]
+                        }
+                      },
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -982,12 +1292,21 @@
                   {
                     "parameters": [
                       {
-                        "value": "",
+                        "value": "/modules/osc/values/_End",
                         "controlAddress": "/inputValue"
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value"
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -997,6 +1316,19 @@
                 "viewZoom": 1.0
               },
               "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
+                    "commandType": "Power off",
+                    "command": {
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -1021,8 +1353,8 @@
       }
     ],
     "viewOffset": [
-      0,
-      0
+      43,
+      -14
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -1036,43 +1368,13 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        0,
-        0
+        43,
+        -14
       ],
       "viewZoom": 1.0
     }
   },
   "sequences": {
-    "items": [
-      {
-        "parameters": [
-          {
-            "value": "",
-            "controlAddress": "/ltcSyncModule",
-            "enabled": false
-          }
-        ],
-        "niceName": "Sequence",
-        "type": "Sequence",
-        "layers": {
-          "hideInEditor": true,
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "cues": {
-          "hideInEditor": true,
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "editing": true
-      }
-    ],
     "viewOffset": [
       0,
       0

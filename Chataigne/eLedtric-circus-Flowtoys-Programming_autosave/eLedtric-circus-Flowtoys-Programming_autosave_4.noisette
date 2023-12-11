@@ -151,12 +151,6 @@
   "modules": {
     "items": [
       {
-        "parameters": [
-          {
-            "value": false,
-            "controlAddress": "/logIncoming"
-          }
-        ],
         "niceName": "OSC",
         "type": "OSC",
         "scripts": {
@@ -209,7 +203,7 @@
               "shortName": "_chan1"
             },
             {
-              "value": 0.0,
+              "value": 1.0,
               "controlAddress": "/_End",
               "type": "Float",
               "niceName": "/End",
@@ -221,7 +215,6 @@
               "shortName": "_End"
             },
             {
-              "value": 0.0,
               "controlAddress": "/_EndVerse_1_Drop_1",
               "type": "Float",
               "niceName": "/EndVerse_1_Drop_1",
@@ -316,7 +309,7 @@
               "shortName": "_Strings"
             },
             {
-              "value": 1.0,
+              "value": 0.0,
               "controlAddress": "/_Verse1_Drop1",
               "type": "Float",
               "niceName": "/Verse1_Drop1",
@@ -340,7 +333,6 @@
               "shortName": "_Verse2_Drop4"
             },
             {
-              "value": 0.0,
               "controlAddress": "/_Verse_1_Drop_1",
               "type": "Float",
               "niceName": "/Verse_1_Drop_1",
@@ -352,7 +344,6 @@
               "shortName": "_Verse_1_Drop_1"
             },
             {
-              "value": 0.0,
               "controlAddress": "/_Verse_2_Drop_4",
               "type": "Float",
               "niceName": "/Verse_2_Drop_4",
@@ -376,6 +367,7 @@
               "shortName": "_wakeUp"
             },
             {
+              "value": 60.0,
               "controlAddress": "/__samplerate",
               "type": "Float",
               "niceName": "/_samplerate",
@@ -454,7 +446,7 @@
                       "controlAddress": "/local"
                     },
                     {
-                      "value": "192.168.0.100",
+                      "value": "192.168.0.101",
                       "controlAddress": "/remoteHost"
                     }
                   ],
@@ -494,7 +486,7 @@
                 "mode": {
                   "parameters": [
                     {
-                      "value": 1,
+                      "value": 13,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 13,
@@ -510,7 +502,7 @@
                       "feedbackOnly": false
                     },
                     {
-                      "value": 1,
+                      "value": 16,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 50,
@@ -577,7 +569,7 @@
                       "feedbackOnly": false
                     },
                     {
-                      "value": 1.0,
+                      "value": 0.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -636,7 +628,7 @@
                 "mode": {
                   "parameters": [
                     {
-                      "value": 1,
+                      "value": 13,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 13,
@@ -652,7 +644,7 @@
                       "feedbackOnly": false
                     },
                     {
-                      "value": 1,
+                      "value": 16,
                       "alwaysNotify": true,
                       "minValue": 1,
                       "maxValue": 50,
@@ -719,7 +711,7 @@
                       "feedbackOnly": false
                     },
                     {
-                      "value": 1.0,
+                      "value": 0.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -915,6 +907,17 @@
                     "type": "Consequence",
                     "commandModule": "flowtoysConnectBridgeOSCModule",
                     "commandPath": "",
+                    "commandType": "Wake up",
+                    "command": {
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "flowtoysConnectBridgeOSCModule",
+                    "commandPath": "",
                     "commandType": "Mode + Adjust",
                     "command": {
                       "containers": {
@@ -943,7 +946,7 @@
                               "controlAddress": "/brightness"
                             },
                             {
-                              "value": 1.0,
+                              "value": 0.0,
                               "controlAddress": "/saturation"
                             },
                             {
@@ -1043,7 +1046,11 @@
                               "controlAddress": "/brightness"
                             },
                             {
-                              "value": 1.0,
+                              "value": 0.9321838617324829,
+                              "controlAddress": "/hue"
+                            },
+                            {
+                              "value": 0.5,
                               "controlAddress": "/saturation"
                             },
                             {
@@ -1078,6 +1085,7 @@
             },
             {
               "niceName": "LightMode3",
+              "editorIsCollapsed": true,
               "type": "Action",
               "conditions": {
                 "items": [
@@ -1138,7 +1146,7 @@
                               "controlAddress": "/enableAdjust"
                             },
                             {
-                              "value": 1.0,
+                              "value": 0.75,
                               "controlAddress": "/brightness"
                             },
                             {
@@ -1220,12 +1228,12 @@
                         "mode": {
                           "parameters": [
                             {
-                              "value": 1,
+                              "value": 13,
                               "hexMode": false,
                               "controlAddress": "/page"
                             },
                             {
-                              "value": 1,
+                              "value": 16,
                               "hexMode": false,
                               "controlAddress": "/mode"
                             }
@@ -1242,7 +1250,7 @@
                               "controlAddress": "/brightness"
                             },
                             {
-                              "value": 1.0,
+                              "value": 0.0,
                               "controlAddress": "/saturation"
                             },
                             {
@@ -1345,7 +1353,7 @@
       }
     ],
     "viewOffset": [
-      380,
+      43,
       -14
     ],
     "viewZoom": 1.0,
@@ -1360,43 +1368,13 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        380,
+        43,
         -14
       ],
       "viewZoom": 1.0
     }
   },
   "sequences": {
-    "items": [
-      {
-        "parameters": [
-          {
-            "value": "",
-            "controlAddress": "/ltcSyncModule",
-            "enabled": false
-          }
-        ],
-        "niceName": "Sequence",
-        "type": "Sequence",
-        "layers": {
-          "hideInEditor": true,
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "cues": {
-          "hideInEditor": true,
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "editing": true
-      }
-    ],
     "viewOffset": [
       0,
       0
