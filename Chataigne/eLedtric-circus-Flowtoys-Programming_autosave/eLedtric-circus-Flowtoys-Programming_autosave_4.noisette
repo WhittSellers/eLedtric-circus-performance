@@ -203,7 +203,7 @@
               "shortName": "_chan1"
             },
             {
-              "value": 1.0,
+              "value": 0.0,
               "controlAddress": "/_End",
               "type": "Float",
               "niceName": "/End",
@@ -285,7 +285,7 @@
               "shortName": "_Refrain"
             },
             {
-              "value": 0.0,
+              "value": 1.0,
               "controlAddress": "/_Start",
               "type": "Float",
               "niceName": "/Start",
@@ -446,7 +446,7 @@
                       "controlAddress": "/local"
                     },
                     {
-                      "value": "192.168.0.101",
+                      "value": "192.168.0.100",
                       "controlAddress": "/remoteHost"
                     }
                   ],
@@ -466,7 +466,6 @@
             "power": {
             },
             "sync": {
-              "editorIsCollapsed": true
             }
           }
         },
@@ -569,7 +568,7 @@
                       "feedbackOnly": false
                     },
                     {
-                      "value": 0.0,
+                      "value": 1.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -711,7 +710,7 @@
                       "feedbackOnly": false
                     },
                     {
-                      "value": 0.0,
+                      "value": 1.0,
                       "alwaysNotify": true,
                       "minValue": 0.0,
                       "maxValue": 1.0,
@@ -1029,7 +1028,7 @@
                               "controlAddress": "/page"
                             },
                             {
-                              "value": 8,
+                              "value": 9,
                               "hexMode": false,
                               "controlAddress": "/mode"
                             }
@@ -1044,10 +1043,6 @@
                             {
                               "value": 1.0,
                               "controlAddress": "/brightness"
-                            },
-                            {
-                              "value": 0.9321838617324829,
-                              "controlAddress": "/hue"
                             },
                             {
                               "value": 0.5,
@@ -1128,12 +1123,12 @@
                         "mode": {
                           "parameters": [
                             {
-                              "value": 1,
+                              "value": 2,
                               "hexMode": false,
                               "controlAddress": "/page"
                             },
                             {
-                              "value": 6,
+                              "value": 8,
                               "hexMode": false,
                               "controlAddress": "/mode"
                             }
@@ -1150,7 +1145,7 @@
                               "controlAddress": "/brightness"
                             },
                             {
-                              "value": 1.0,
+                              "value": 0.5,
                               "controlAddress": "/saturation"
                             },
                             {
@@ -1251,6 +1246,10 @@
                             },
                             {
                               "value": 0.0,
+                              "controlAddress": "/hue"
+                            },
+                            {
+                              "value": 1.0,
                               "controlAddress": "/saturation"
                             },
                             {
